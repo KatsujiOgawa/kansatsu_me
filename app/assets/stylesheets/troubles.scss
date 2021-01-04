@@ -21,19 +21,32 @@ textarea{
   box-sizing: border-box;
 }
 
+input{
+  color: black;
+}
 
-.header_bar{
-  // background-color: #3e3e42;
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.header_logo{
   color: aliceblue;
   height: 10vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  padding-left: 5vw;
 }
 
-.header_bar a{
+.header_logo a{
   color: aliceblue;
   font-size: 40px;
+}
+
+.header_link a{
+  padding-right: 5vw;
+
 }
 
 .footer_bar{
