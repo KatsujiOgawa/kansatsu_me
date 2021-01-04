@@ -1,3 +1,46 @@
-// Place all the styles related to the troubles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// 共通項目
+html{
+  background-color: #303768;
+}
+
+a{
+  text-decoration: none;
+}
+
+p {
+  white-space: pre-wrap;
+}
+
+textarea{
+  resize: none;
+}
+
+*{
+  color: aliceblue;
+  font-family: Hiragino Mincho ProN;
+  box-sizing: border-box;
+}
+
+
+.header_bar{
+  // background-color: #3e3e42;
+  color: aliceblue;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_bar a{
+  color: aliceblue;
+  font-size: 40px;
+}
+
+.footer_bar{
+  // background-color: #3e3e42;
+  height: 5vh;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
