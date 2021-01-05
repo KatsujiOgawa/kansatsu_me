@@ -14,11 +14,12 @@ a{
 
 p {
   white-space: pre-wrap;
-  font-size: 25px;
+  // font-size: 10px;
 }
 
 textarea{
   resize: none;
+  width: 85%;
 }
 
 *{
@@ -29,7 +30,15 @@ textarea{
 }
 
 input{
-  color: black;
+  color: #2c3242;
+  border-radius: 6px;
+}
+
+textarea{
+  margin: 10px 0 20px 0;
+  color: #2c3242;
+  width: 90%;
+  border-radius: 6px;
 }
 
 header{
@@ -83,11 +92,11 @@ header{
   // background-image: image-url("ryuboku.jpg");
   // background-size: cover;
   // opacity:0.5;
+  padding: 30px 20px;
   height: 700px;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   border: 3px solid aliceblue;
   border-radius: 8px;
   background-repeat: no-repeat;
@@ -101,7 +110,7 @@ header{
 }
 
 .trouble-content{
-  margin: 20px 0px;
+  margin-bottom: 20px;
   width: calc( 50% - 20px );
   border: 3px solid aliceblue;
   border-radius: 8px;
@@ -117,5 +126,73 @@ header{
 
 .monster-image{
   width: 100%;
+  height: 200px;
   border-radius: 8px;
+}
+
+.form-container{
+  width: 100%;
+}
+
+.title{
+  // width: 80%;
+}
+
+.reason{
+
+}
+
+.period input{
+  width: 100px;
+  margin-top: 10px;
+}
+
+ .main-form{
+    margin-bottom: 20px;
+ }
+
+ .submit-form p{
+  margin-bottom: 10px;
+ }
+
+// ------------------------------------------------レスポンシブ（タブレット）
+
+@media (max-width: 600px) {
+  .header_logo a{
+    color: aliceblue;
+    font-size: 18px;
+  }
+  
+  .header_link a{
+    padding-right: 5vw;
+    font-size: 14px;
+  }
+
+  // トップページ
+  .new-wrapper{
+    height: 600px;
+  }
+  
+  .random-trouble{
+    width: 100%;
+  }
+  
+  .trouble-content{
+    margin-bottom: 10px;
+    width: 100%;
+    border: 3px solid aliceblue;
+    border-radius: 8px;
+  }
+  
+  .trouble-container{
+    color: #2c3242;
+    padding: 20px;
+  }
+  
+  .monster-image{
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+  }
+
 }
