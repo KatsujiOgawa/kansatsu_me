@@ -3,7 +3,9 @@
   <head>
     <title>カンサツ.(me)</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <%= csp_meta_tag %> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -23,11 +25,12 @@
         <% end %>
       <div>
     </header>
-    <%= yield %>
+    
     <footer>
       <div class="footer_bar">
-        footer
+        <p>footer</p>
       </div>
     </footer>
+    <%= yield %>
   </body>
 </html>

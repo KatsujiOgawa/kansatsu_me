@@ -1,6 +1,11 @@
 // 共通項目
 html{
-  background-color: #303768;
+  background-color: #2c3242;
+  position: relative;/*←相対位置*/
+}
+
+body{
+  padding-bottom: 60px;
 }
 
 a{
@@ -9,51 +14,185 @@ a{
 
 p {
   white-space: pre-wrap;
+  // font-size: 10px;
 }
 
 textarea{
   resize: none;
+  width: 85%;
 }
 
 *{
+  word-wrap: break-word;
   color: aliceblue;
-  font-family: Hiragino Mincho ProN;
+  font-family:"ヒラギノ丸ゴ Pro W4";
   box-sizing: border-box;
 }
 
 input{
-  color: black;
+  color: #2c3242;
+  border-radius: 6px;
+}
+
+textarea{
+  margin: 10px 0 20px 0;
+  color: #2c3242;
+  width: 90%;
+  border-radius: 6px;
 }
 
 header{
   display: flex;
   justify-content: space-between;
   align-items: center; 
+  height: 80px;
+  margin: 20px 0px;
 }
 
 .header_logo{
   color: aliceblue;
-  height: 10vh;
   display: flex;
+  height: 60px;
+  justify-content: center;
   align-items: center;
-  padding-left: 5vw;
+  border-radius: 8px;
+  border: 3px solid aliceblue;
+  margin-left: 5vw ;
+  padding: 10px 20px;
 }
 
 .header_logo a{
   color: aliceblue;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .header_link a{
   padding-right: 5vw;
-
+  font-size: 20px;
 }
 
 .footer_bar{
   // background-color: #3e3e42;
-  height: 5vh;
-  font-size: 20px;
+  height: 60px;
+  width: 100%;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: 0; 
+}
+
+.main{
+  width: 100%;
+  padding:0 5vw;
+}
+// トップページ
+.new-wrapper{
+  // background-image: image-url("ryuboku.jpg");
+  // background-size: cover;
+  // opacity:0.5;
+  padding: 30px 20px;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 3px solid aliceblue;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+}
+
+.random-trouble{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.trouble-content{
+  margin-bottom: 20px;
+  width: calc( 50% - 20px );
+  border: 3px solid aliceblue;
+  border-radius: 8px;
+  // padding: 20px 30px;
+  // background-image: image-url("watermark.jpg");
+  // background-size: cover;
+}
+
+.trouble-container{
+  color: #2c3242;
+  padding: 20px;
+}
+
+.monster-image{
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.form-container{
+  width: 100%;
+}
+
+.title{
+  // width: 80%;
+}
+
+.reason{
+
+}
+
+.period input{
+  width: 100px;
+  margin-top: 10px;
+}
+
+ .main-form{
+    margin-bottom: 20px;
+ }
+
+ .submit-form p{
+  margin-bottom: 10px;
+ }
+
+// ------------------------------------------------レスポンシブ（タブレット）
+
+@media (max-width: 600px) {
+  .header_logo a{
+    color: aliceblue;
+    font-size: 18px;
+  }
+  
+  .header_link a{
+    padding-right: 5vw;
+    font-size: 14px;
+  }
+
+  // トップページ
+  .new-wrapper{
+    height: 600px;
+  }
+  
+  .random-trouble{
+    width: 100%;
+  }
+  
+  .trouble-content{
+    margin-bottom: 10px;
+    width: 100%;
+    border: 3px solid aliceblue;
+    border-radius: 8px;
+  }
+  
+  .trouble-container{
+    color: #2c3242;
+    padding: 20px;
+  }
+  
+  .monster-image{
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+  }
+
 }
